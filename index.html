@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Pagina de Cadastro - Stone</title>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width,user-scalable=0"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/template.css"/>
+    <body>
+
+    </body>
+        <h1>Stone</h1>
+        <h2>Banco de Dados</h2>
+        <h3>Para canditadar-se ao banco de dados da <strong id="nome_empresa">Stone</strong> preencha, corretamente, os dados abaixo:</h3>
+        <form action="" method="post" id="formulario">
+            <div class="form_comp">
+                <div class="area_nome">
+                    <input type="text" id="nome" placeholder="Nome Completo" required="required">
+                </div>
+                <div class="area_email">
+                    <input type="email" id="endereco_email" placeholder="E-mail">
+                </div>
+                <div class="area_nascimento">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input class="input_custom" type="date" id="nascimento" required="required">
+                </div>
+                <div class="area_sexo">
+                    <label for="sexo">Sexo</label>
+                    <select class="form_select input_custom" name="sexo" required="required" placeholder="Sexo">
+                        <option value="">Selecione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="NA">Não quero identificar</option>
+                    </select>
+                </div>
+                <div class="area_telefone">
+                    <input type="text" id="telefone" placeholder="Telefone (opcional)">
+                </div>
+                <hr/>
+                <div class="area_upload">
+                    <label>Carregue seu CV</label><br>
+                    <input type="file" name="arquivo" required="required">
+                </div>
+                <button type="submit" class="botao_envio">Enviar</button>
+            </div>
+        </form>
+    </head>
+</html>
